@@ -1,4 +1,4 @@
-//nmp connection packages
+//npm installed packages
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 
@@ -12,7 +12,7 @@ var connection = mysql.createConnection({
 })
 
 console.log("Welcome to BAMazon!");
-//connect to sql and start the products
+//connect to sql and start the products view in command
 connection.connect(function(err){
 	if (err) throw err;
 	console.log("connected as Customer");
